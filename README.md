@@ -16,3 +16,10 @@ https://learning--logger.herokuapp.com - automatic!
 ![picture](add_entry.png)
 
 ### You can create topics and then make notes on it
+
+# How to Run on local Server:
+
+* make sure you have python installed
+* then run pip install -r requirements.txt
+* and then migrate: python manage.py migrate
+* start the server: python manage.py runserver
