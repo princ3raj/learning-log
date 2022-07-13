@@ -8,7 +8,16 @@ from django.contrib.auth.decorators import login_required
 
 from django.http import Http404
 
+import time
+
 # Create your views here.
+
+
+def healthcheck(request):
+    '''Healthcheck'''
+    time.sleep(15)
+    return render(request,'learning_logs/index.html')
+
 
 def index(request):
     """The Home Page for Learning Log"""
